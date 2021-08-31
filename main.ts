@@ -42,7 +42,7 @@ namespace WiFiBit {
     }
 
     /**
-     * Make a serial connection between micro:bit and WiFi:bit.
+     * Make a serial connection between micro:bit and GSM.
      * @param baud BAUD, eg: 9600
      */
     //% weight=100
