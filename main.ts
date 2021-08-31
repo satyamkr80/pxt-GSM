@@ -43,11 +43,11 @@ namespace WiFiBit {
 
     /**
      * Make a serial connection between micro:bit and WiFi:bit.
-     * @param baud BAUD, eg: "BAUD"
+     * @param baud BAUD, eg: 9600
      */
     //% weight=100
     //% blockId="wfb_connect" block="connect to GSM"
-    export function connectToGSM(baud: string): void {
+    export function connectToGSM(baud: number): void {
         serial.redirect(
             SerialPin.P16,
             SerialPin.P8,
