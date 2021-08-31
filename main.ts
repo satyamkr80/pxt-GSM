@@ -43,7 +43,7 @@ namespace WiFiBit {
 
     /**
      * Make a serial connection between micro:bit and WiFi:bit.
-	 @param baud BAUD, eg: "BAUD"
+     * @param baud BAUD, eg: "BAUD"
      */
     //% weight=100
     //% blockId="wfb_connect" block="connect to GSM"
