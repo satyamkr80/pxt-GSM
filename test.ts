@@ -1,5 +1,5 @@
 {
-    WiFiBit.connectToWiFiBit()
+    WiFiBit.connectToGSM(115200)
     basic.pause(3000)
     WiFiBit.connectToWiFiNetwork("SSID", "key")
     WiFiBit.executeAtCommand("ATE0", 1000)
