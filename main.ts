@@ -21,7 +21,7 @@ enum Newline {
  * WiFi:bit commands.
  */
 //% color=#3452C3 weight=90 icon="\uf1eb" block="WiFi:bit"
-namespace WiFiBit {
+namespace GSMbit {
 
     function writeToSerial(data: string, waitTime: number): void {
         serial.writeString(data + "\u000D" + "\u000A")
