@@ -20,7 +20,7 @@ enum Newline {
 /**
  * GSM:bit commands.
  */
-//% color=#3452C3 weight=90 icon="\0f7c4" block="GSM:bit"
+//% color=#3452C3 weight=90 icon="\uf7c4" block="GSM:bit"
 namespace GSMbit {
 
     function writeToSerial(data: string, waitTime: number): void {
