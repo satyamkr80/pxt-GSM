@@ -20,7 +20,7 @@ enum Newline {
 /**
  * GSM:bit commands.
  */
-//% color=#3452C3 weight=90 icon="\uf1eb" block="GSM:bit"
+//% color=#3452C3 weight=90 icon="\f7c4" block="GSM:bit"
 namespace GSMbit {
 
     function writeToSerial(data: string, waitTime: number): void {
@@ -45,13 +45,13 @@ namespace GSMbit {
      * Make a serial connection between micro:bit and GSM.
      * @param baud BAUD, eg: 9600
      */
-    //% weight=100
-    //% blockId="wfb_connect" block="connect to GSM"
+    //% weight=99
+    //% blockId="wfb_connect" block="connect to GSM %baud"
     export function connectToGSM(baud: number): void {
         serial.redirect(
             SerialPin.P16,
             SerialPin.P8,
-            BaudRate.BaudRate+BAUD
+            BaudRate.BaudRate+baud
         )
         basic.pause(100)
         // Restart module:
