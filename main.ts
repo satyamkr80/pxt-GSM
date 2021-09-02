@@ -43,7 +43,7 @@ namespace GSMbit {
 
     /**
      * Make a serial connection between micro:bit and GSM.
-     * @param baud BAUD, eg: 9600
+     * @param baud BAUD, eg: "9600"
      */
     //% weight=99
     //% blockId="wfb_connect" block="connect to GSM %baud"
@@ -51,7 +51,7 @@ namespace GSMbit {
         serial.redirect(
             SerialPin.P16,
             SerialPin.P8,
-            BaudRate.BaudRate+baud
+            BaudRate.BaudRate115200
         )
         basic.pause(100)
         // Restart module:
